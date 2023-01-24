@@ -1,0 +1,9 @@
+2023-01-14T14:21:51.443+07:00  INFO 26148 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 26148 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:21:51.445+07:00  INFO 26148 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:21:52.041+07:00  INFO 26148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:21:52.048+07:00  INFO 26148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:21:52.048+07:00  INFO 26148 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:21:52.111+07:00  INFO 26148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:21:52.111+07:00  INFO 26148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 627 ms
+2023-01-14T14:21:52.327+07:00  INFO 26148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5556 (http) with context path ''
+2023-01-14T14:21:52.333+07:00  INFO 26148 --- [main] c.s.SpringPostgresApplication            : Started SpringPostgresApplication in 1.177 seconds (process running for 1.386)

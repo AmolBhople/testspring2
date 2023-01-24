@@ -1,0 +1,27 @@
+server:
+  port: 5558
+app:
+  name: Kafka-Spring
+logging:
+  file:
+    path: ../../logs/${app.name}
+    name: ${app.name}
+  level:
+    com.springkafka: TRACE
+  pattern:
+    console: '%yellow(%d{dd-MM-yyyy HH:mm:ss.SSS}) %magenta([%thread]) %highlight(%-5level) %cyan(%logger).%green(%M) - %msg%n'
+    file: '%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger.%M - %msg%n'
+  logback:
+    rollingpolicy:
+      file-name-pattern: ${logging.file.path}/archived/${logging.file.name}.%d{yyyy-MM-dd}.%i.log.gz #The filename pattern used to create log archives.
+      clean-history-on-start: false  #If log archive cleanup should occur when the application starts.
+      max-file-size: 10MB #The maximum size of log file before it is archived.
+      total-size-cap: 100MB #The maximum amount of size log archives can take before being deleted.
+      max-history: 10 #The maximum number of archive log files to keep (defaults to 7).
+  register-shutdown-hook: false
+
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+

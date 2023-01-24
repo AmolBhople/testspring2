@@ -1,0 +1,126 @@
+2023-01-14T14:18:29.621+07:00  INFO 13024 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 13024 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:18:29.623+07:00  INFO 13024 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:18:30.021+07:00  INFO 13024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-14T14:18:30.036+07:00  INFO 13024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-01-14T14:18:30.409+07:00  INFO 13024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:18:30.418+07:00  INFO 13024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:18:30.418+07:00  INFO 13024 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:18:30.491+07:00  INFO 13024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:18:30.492+07:00  INFO 13024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 829 ms
+2023-01-14T14:18:30.539+07:00  WARN 13024 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2023-01-14T14:18:30.542+07:00  INFO 13024 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-14T14:18:30.551+07:00  INFO 13024 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-14T14:18:30.563+07:00 ERROR 13024 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-01-14T14:18:48.813+07:00  INFO 13568 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 13568 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:18:48.815+07:00  INFO 13568 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:18:49.226+07:00  INFO 13568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-14T14:18:49.242+07:00  INFO 13568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-01-14T14:18:49.638+07:00  INFO 13568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:18:49.645+07:00  INFO 13568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:18:49.645+07:00  INFO 13568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:18:49.708+07:00  INFO 13568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:18:49.708+07:00  INFO 13568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 852 ms
+2023-01-14T14:18:49.751+07:00  WARN 13568 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2023-01-14T14:18:49.753+07:00  INFO 13568 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-14T14:18:49.762+07:00  INFO 13568 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-14T14:18:49.777+07:00 ERROR 13568 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-01-14T14:20:07.792+07:00  INFO 5620 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 5620 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:20:07.794+07:00  INFO 5620 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:20:08.204+07:00  INFO 5620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-14T14:20:08.221+07:00  INFO 5620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-01-14T14:20:08.622+07:00  INFO 5620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:20:08.629+07:00  INFO 5620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:20:08.629+07:00  INFO 5620 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:20:08.693+07:00  INFO 5620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:20:08.694+07:00  INFO 5620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
+2023-01-14T14:20:08.739+07:00  WARN 5620 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2023-01-14T14:20:08.742+07:00  INFO 5620 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-14T14:20:08.750+07:00  INFO 5620 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-14T14:20:08.765+07:00 ERROR 5620 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-01-14T14:20:31.564+07:00  INFO 19136 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 19136 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:20:31.566+07:00  INFO 19136 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:20:32.185+07:00  INFO 19136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:20:32.192+07:00  INFO 19136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:20:32.192+07:00  INFO 19136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:20:32.259+07:00  INFO 19136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:20:32.259+07:00  INFO 19136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2023-01-14T14:20:32.475+07:00  INFO 19136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5556 (http) with context path ''
+2023-01-14T14:20:32.481+07:00  INFO 19136 --- [main] c.s.SpringPostgresApplication            : Started SpringPostgresApplication in 1.222 seconds (process running for 1.477)
+2023-01-14T14:21:04.260+07:00  INFO 11060 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 11060 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:21:04.262+07:00  INFO 11060 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:21:05.079+07:00  INFO 11060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:21:05.088+07:00  INFO 11060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:21:05.089+07:00  INFO 11060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:21:05.163+07:00  INFO 11060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:21:05.164+07:00  INFO 11060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 852 ms
+2023-01-14T14:21:05.387+07:00  INFO 11060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5556 (http) with context path ''
+2023-01-14T14:21:05.393+07:00  INFO 11060 --- [main] c.s.SpringPostgresApplication            : Started SpringPostgresApplication in 1.648 seconds (process running for 1.89)
+2023-01-14T14:21:28.673+07:00  INFO 18756 --- [main] c.s.SpringPostgresApplication            : Starting SpringPostgresApplication using Java 18.0.2.1 with PID 18756 (C:\.codebase\j\spring\spring.postgres.template\target\classes started by abhople in C:\.codebase\j\spring\spring.postgres.template)
+2023-01-14T14:21:28.675+07:00  INFO 18756 --- [main] c.s.SpringPostgresApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-01-14T14:21:29.268+07:00  INFO 18756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5556 (http)
+2023-01-14T14:21:29.277+07:00  INFO 18756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14T14:21:29.277+07:00  INFO 18756 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14T14:21:29.354+07:00  INFO 18756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14T14:21:29.355+07:00  INFO 18756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2023-01-14T14:21:29.573+07:00  INFO 18756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5556 (http) with context path ''
+2023-01-14T14:21:29.579+07:00  INFO 18756 --- [main] c.s.SpringPostgresApplication            : Started SpringPostgresApplication in 1.189 seconds (process running for 1.407)
